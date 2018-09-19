@@ -22,32 +22,55 @@
 <center>	
 
 <body>
+<nav class="navbar navbar-expand-sm" >
+
+<!-- Brand -->
+<a style="color: #ffffff;" class="navbar-brand" href="#">Keynasoft</a>
+
+<!-- Links -->
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a style="color: #ffffff;" class="nav-link" href="home.php">Inicio</a>
+  </li>
+  <li class="nav-item">
+    <a style="color: #ffffff;" class="nav-link" href="insertarBienes.php">Registrar Bienes</a>
+  </li>
+
+  <!-- Dropdown -->
+  <li  class="nav-item dropdown">
+    <a  class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+      Otros
+    </a>
+    <div class="dropdown-menu">
+      <a  class="dropdown-item" href="perfil.php">Perfil</a> <!-- En el perfil se muestra la informacion del usuario y sus bienes registrados-->
+      <a style="color: #ffffff;" class="dropdown-item" href="reportarRobo.php">Reportar robo</a>
+      <a style="color: #ffffff;" class="dropdown-item" href="index.php">Iniciar sesion</a>
+      <a style="color: #ffffff;" class="dropdown-item" href="insertarUsuarios.php">Registrar</a>
+    </div>
+  </li>
+</ul>
+</nav>
+<br>
 
 
 
-    <div class="container"style="text-align: center; display: inline-block; padding-top: 100px; widht: 2%;">
+    <div class="container"style="margin:0.011%; padding: 3%;">
         <div class="form-signin" role="form">
-            <h2 class="form-signin-heading">Iniciar Sesión</h2>
+            <h2 class="form-signin-heading" style="color:#163f70;">Iniciar Sesión</h2>
             <input type="text" id="usuario" class="form-control" placeholder="usuario" required autofocus style>
             <input type="password" id="clave" class="form-control" placeholder="contraseña" required>
             <button class="btn btn-lg btn-primary btn-block" id="singin" type="button">Ingresar</button>
-            <p>No tienes una cuenta? <a href="insertarUsuarios.php">Regístrate ahora.</a></p>
-            <p>Olvidaste tu contraseña? <a href="insertarUsuarios.php">Restablecer contraseña.</a></p>
+            <p style="color:#163f70;">No tienes una cuenta? <a href="insertarUsuarios.php">Regístrate ahora.</a></p>
+            <p style="color:#163f70;">Olvidaste tu contraseña? <a href="insertarUsuarios.php">Restablecer contraseña.</a></p>
         </div>
     </div>
     <div class="container" id="resultado">
     </div>
 
     <footer>
-    <div>
-      <a href="https://www.facebook.com/Keynasoft">
-      <img src="../img/eeefacebook.png"></a>
-      <a href="https://www.instagram.com/Keynasoft">
-      <img src="../img/eeinstagram.png"></a>
-      
-      <p>Keynasoft, Copyright© 2018</p>
-    </div>
-  </footer>
+    
+        <p>Keynasoft, Copyright© 2018</p>
+    </footer>
 
 </body>
 </html>

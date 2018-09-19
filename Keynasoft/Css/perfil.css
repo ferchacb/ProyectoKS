@@ -3,6 +3,10 @@
     margin: 8px;
 
 }
+
+body{
+    font-family: Myriad Pro;
+}
 .navbar {
     margin-bottom: 0;
    background-color: #215aa8;

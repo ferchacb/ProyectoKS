@@ -9,10 +9,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../Css/bienes.css">
-
-
   <title>Insertar bienes</title>
 </head>
+
 <body>
 
   <nav class="navbar navbar-expand-sm" >
@@ -23,10 +22,10 @@
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a style="color: #ffffff;" class="nav-link" href="#">Inicio</a>
+      <a style="color: #ffffff;" class="nav-link" href="home.php">Inicio</a>
     </li>
     <li class="nav-item">
-      <a style="color: #ffffff;" class="nav-link" href="#">Registrar Bienes</a>
+      <a style="color: #ffffff;" class="nav-link" href="insertarBienes.php">Registrar Bienes</a>
     </li>
 
     <!-- Dropdown -->
@@ -35,9 +34,10 @@
         Otros
       </a>
       <div class="dropdown-menu">
-        <a  class="dropdown-item" href="#">Perfil</a> <!-- En el perfil se muestra la informacion del usuario y sus bienes registrados-->
-        <a style="color: #ffffff;" class="dropdown-item" href="#">Reportar robo</a>
-        <a style="color: #ffffff;" class="dropdown-item" href="#">Link 3</a>
+        <a  class="dropdown-item" href="perfil.php">Perfil</a> <!-- En el perfil se muestra la informacion del usuario y sus bienes registrados-->
+        <a style="color: #ffffff;" class="dropdown-item" href="reportarRobo.php">Reportar robo</a>
+        <a style="color: #ffffff;" class="dropdown-item" href="index.php">Iniciar sesion</a>
+        <a style="color: #ffffff;" class="dropdown-item" href="insertarUsuarios.php">Registrar</a>
       </div>
     </li>
   </ul>
@@ -56,28 +56,27 @@
   </script>
 
     <section>
-      <div class"contenedor" style="text-align: left; display: inline-block; margin-left: 33.5%; margin-right:33.5%">
-        <div class"centro">
+        <div class="col-md-9" style="margin:0.011%; padding: 3%;">
           <div class"form">
             <form>
-              <div style="text-align: center; display: inline-block; padding-top: 43px;"><h2>Registrar Bienes</h2></div>
+              <div><h2>Registrar Bienes</h2></div>
               <div class="form-group">
-                <label for="">Nombre Producto</label>
+                <label for="InputNombre" class="col-sm-2 col-form-label">Nombre Producto</label>
                 <input type="text" class="form-control" id="nombreArticulo"  placeholder="Nombre Producto">
               </div>
               <div class="form-group">
-                <label for="">Descripción</label>
+                <label for="InputDescripcion" class="col-sm-2 col-form-label">Descripción</label>
                 <input type="text" class="form-control" id="descripcion" placeholder="Descripción">
               </div>
               <div class="form-group">
-                <label for="">Fecha de compra</label>
+                <label for="InputFecha" class="col-sm-2 col-form-label">Fecha de compra</label>
                 <input type="text" class="form-control" id="fecha" placeholder="Fecha de compra" />
               </div>
               <div class="form-group">
-                <label for="">Lugar de Compra</label>
+                <label for="InputLugar" class="col-sm-2 col-form-label">Lugar de Compra</label>
                 <input type="text" class="form-control" id="direccion" placeholder="Lugar de compra">
               </div>
-              <label for="">Adjuntar Factura</label><br>
+              <label for="InputFactura" class="col-sm-2 col-form-label">Adjuntar Factura</label><br>
               <input type="file" id="imagen" accept="image/*"/>
               <div class="container"style="text-align: left; display: inline-block; padding-top: 33px;">
                 <div class="dropdown dropright">
@@ -107,32 +106,40 @@
                 </div>
             </div>
             <div class="form-group">
-              <label for="">Otras marcas:</label>
+              <label for="InputMarcas" class="col-sm-2 col-form-label">Otras marcas:</label>
               <input type="text" class="form-control" id="marca" placeholder="Otras Marcas">
             </div>
             <div class="form-group">
-              <label for="">Numero de serie</label>
+              <label for="InputSerie" class="col-sm-2 col-form-label">Numero de serie</label>
               <input type="text" class="form-control" id="numSerie" placeholder="Numero de serie">
             </div>
             <div class="form-group">
-              <label for="">Modelo</label>
+              <label for="InputModelo" class="col-sm-2 col-form-label">Modelo</label>
               <input type="text" class="form-control" id="modelo" placeholder="Modelo">
             </div>
+            
+            <hr class="mb-4">
             <button type="submit" class="btn btn-primary" id="btnInsertar">Agregar</button><br>
           </form>
           </div>
           <div id="resultado"></div>
         </div>
-      </div>
-    </div>
+  </div>
+
   </section>
 
   <footer>
     <div>
       <a href="https://www.facebook.com/Keynasoft">
-      <img src="../img/444facebook.png"></a>
+      <img src="../img/facebook.png" width="60" height="60"/></a>
       <a href="https://www.instagram.com/Keynasoft">
-      <img src="../img/tttinstagram.png"></a>
+      <img src="../img/Instagram.png" width="60" height="60"/></a>
+      <a href="https://www.twitter.com/Keynasoft">
+      <img src="../img/Twitter.png" width="60" height="60"/></a>
+      <a href="https://www.skype.com/Keynasoft">
+      <img src="../img/Skype.png" width="60" height="60"/></a>
+      <a href="https://www.whatsapp.com/Keynasoft">
+      <img src="../img/Whatsapp.png" width="60" height="60"/></a>
       
       <p>Keynasoft, Copyright© 2018</p>
     </div>

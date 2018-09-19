@@ -12,32 +12,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../Css/usuario.css">
 
-<style type="text/css">
-.shell {
-  position: relative;
-  line-height: 1; }
-  .shell span {
-        position: relative;
-    left: -20px;
-    top: 30px;
-    color: #ccc;
-    pointer-events: none;
-    z-index: -1;}
-    .shell span i {
-      font-style: normal;
-      /* any of these 3 will work */
-      color: transparent;
-      opacity: 0;
-      visibility: hidden; }
-
-input.masked,
-.shell span {
-  font-family: monospace;
-  padding-right: 10px;
-  background-color: transparent;
-  text-transform: uppercase; }
-}
-  </style>
 
 </head>
 <body>
@@ -50,10 +24,10 @@ input.masked,
 <!-- Links -->
 <ul class="navbar-nav">
   <li class="nav-item">
-    <a style="color: #ffffff;" class="nav-link" href="#">Inicio</a>
+    <a style="color: #ffffff;" class="nav-link" href="home.php">Inicio</a>
   </li>
   <li class="nav-item">
-    <a style="color: #ffffff;" class="nav-link" href="#">Registrar Bienes</a>
+    <a style="color: #ffffff;" class="nav-link" href="insertarBienes.php">Registrar Bienes</a>
   </li>
 
   <!-- Dropdown -->
@@ -62,9 +36,10 @@ input.masked,
       Otros
     </a>
     <div class="dropdown-menu">
-      <a  class="dropdown-item" href="#">Perfil</a> <!-- En el perfil se muestra la informacion del usuario y sus bienes registrados-->
-      <a style="color: #ffffff;" class="dropdown-item" href="#">Reportar robo</a>
-      <a style="color: #ffffff;" class="dropdown-item" href="#">Link 3</a>
+      <a  class="dropdown-item" href="perfil.php">Perfil</a> <!-- En el perfil se muestra la informacion del usuario y sus bienes registrados-->
+      <a style="color: #ffffff;" class="dropdown-item" href="reportarRobo.php">Reportar robo</a>
+      <a style="color: #ffffff;" class="dropdown-item" href="index.php">Iniciar sesion</a>
+      <a style="color: #ffffff;" class="dropdown-item" href="insertarUsuarios.php">Registrar</a>
     </div>
   </li>
 </ul>
@@ -97,6 +72,8 @@ function validarletra(e) {
 
 <body class="bg-light">
 
+  <section>
+  <div class="col-md-9" style="margin:0.011%; padding: 3%;">
     <div class="container"style="text-align: left; display: flex; padding-top: 33px;">
         <div class="col-md-8 order-md-1">
           <h3 class="mb-3">Registro</h3>
@@ -104,7 +81,7 @@ function validarletra(e) {
 
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label for="firstName">Nombre</label>
+                <label for="firstName" >Nombre</label>
                 <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
                 <div class="invalid-feedback">
                  Nombre requerido o invalido.
@@ -145,7 +122,7 @@ function validarletra(e) {
             </div>
 
 
- <div class="mb-3">
+              <div class="mb-3">
               <label for="">E-mail</label>
               <input type="text" class="form-control" id="telefono" placeholder="" required>
               <div class="invalid-feedback">
@@ -180,7 +157,6 @@ function validarletra(e) {
 
            
             <hr class="mb-4">
-            <hr class="mb-4">
             <button class="btn btn-primary btn-lg btn-block" type="submit" id="btnregistrar">Registrar
             </button>
 
@@ -189,6 +165,8 @@ function validarletra(e) {
         </div>
       </div>
     </div>
+</div>
+</section>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -222,10 +200,16 @@ function validarletra(e) {
 
     <footer>
     <div>
-      <a href="https://www.facebook.com/Keynasoft">
-      <img src="../img/facebook.png"></a>
+    <a href="https://www.facebook.com/Keynasoft">
+      <img src="../img/facebook.png" width="60" height="60"/></a>
       <a href="https://www.instagram.com/Keynasoft">
-      <img src="../img/instagram.png"></a>
+      <img src="../img/Instagram.png" width="60" height="60"/></a>
+      <a href="https://www.twitter.com/Keynasoft">
+      <img src="../img/Twitter.png" width="60" height="60"/></a>
+      <a href="https://www.skype.com/Keynasoft">
+      <img src="../img/Skype.png" width="60" height="60"/></a>
+      <a href="https://www.whatsapp.com/Keynasoft">
+      <img src="../img/Whatsapp.png" width="60" height="60"/></a>
       
       <p>Keynasoft, Copyright© 2018</p>
     </div>

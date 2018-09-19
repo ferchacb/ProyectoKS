@@ -1,7 +1,9 @@
 * {
-    padding: 0px;
-    margin: 8px;
+    padding: 0%;
+}
 
+body {
+    font-family: Myriad Pro;
 }
 
 #container {
@@ -51,8 +53,7 @@ footer {
     background: #a5d3ed;
     width: 100%;
     text-align: center;
-    padding: 10px;
-
+    padding-top: 2%;
     /* Flexbox */
     display: flex;
     justify-content: center;

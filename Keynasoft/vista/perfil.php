@@ -22,10 +22,10 @@
 <!-- Links -->
 <ul class="navbar-nav">
   <li class="nav-item">
-    <a style="color: #ffffff;" class="nav-link" href="#">Inicio</a>
+    <a style="color: #ffffff;" class="nav-link" href="home.php">Inicio</a>
   </li>
   <li class="nav-item">
-    <a style="color: #ffffff;" class="nav-link" href="#">Registrar Bienes</a>
+    <a style="color: #ffffff;" class="nav-link" href="insertarBienes.php">Registrar Bienes</a>
   </li>
 
   <!-- Dropdown -->
@@ -34,14 +34,43 @@
       Otros
     </a>
     <div class="dropdown-menu">
-      <a  class="dropdown-item" href="#">Perfil</a> <!-- En el perfil se muestra la informacion del usuario y sus bienes registrados-->
-      <a style="color: #ffffff;" class="dropdown-item" href="#">Reportar robo</a>
-      <a style="color: #ffffff;" class="dropdown-item" href="#">Link 3</a>
+      <a  class="dropdown-item" href="perfil.php">Perfil</a> <!-- En el perfil se muestra la informacion del usuario y sus bienes registrados-->
+      <a style="color: #ffffff;" class="dropdown-item" href="reportarRobo.php">Reportar robo</a>
+      <a style="color: #ffffff;" class="dropdown-item" href="index.php">Iniciar sesion</a>
+      <a style="color: #ffffff;" class="dropdown-item" href="insertarUsuarios.php">Registrar</a>
     </div>
   </li>
 </ul>
 </nav>
 <br>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h4>
+				Perfil @usuario
+      </h4>
+      <br>
+		</div>
+  </div>
+</div>
+
+  <footer>
+    <div>
+      <a href="https://www.facebook.com/Keynasoft">
+      <img src="../img/facebook.png" width="60" height="60"/></a>
+      <a href="https://www.instagram.com/Keynasoft">
+      <img src="../img/Instagram.png" width="60" height="60"/></a>
+      <a href="https://www.twitter.com/Keynasoft">
+      <img src="../img/Twitter.png" width="60" height="60"/></a>
+      <a href="https://www.skype.com/Keynasoft">
+      <img src="../img/Skype.png" width="60" height="60"/></a>
+      <a href="https://www.whatsapp.com/Keynasoft">
+      <img src="../img/Whatsapp.png" width="60" height="60"/></a>
+      
+      <p>Keynasoft, Copyright© 2018</p>
+    </div>
+  </footer>
 
 </body>
 </html>
