@@ -21,6 +21,22 @@ class usuarioControlador
 	   return $obj-> validar($usuario,$clave);
 
 	}
+
+	/**
+	 * Funcion que obtiene la existencia del usuario
+	 */
+	function existeUsuario($correo){
+		$obj = new usuariosDatos();
+		return $obj->existeUsuario($correo);
+	}
+
+	/**
+	 * Funcion que obtiene aplica la recuperacion de la cuenta
+	 */
+	function cambioContra($usuario, $pass){
+		$obj = new usuariosDatos();
+		return $obj->cambioContra($usuario, $pass);
+	}
 }
 
  ?>

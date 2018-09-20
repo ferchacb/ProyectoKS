@@ -9,28 +9,25 @@ function ini(){
 
 	$("#btnInsertar").click(enviarDatos);
 
-
-
 }
 function enviarDatos(){
        
    var nombreArticulo = $("#nombreArticulo").val();
-   var descripcion=  $("#descripcion").val();
-   var fecha=  $("#Fecha").val();
-   var direccion=  $("#direccion").val();
-   var factura=  $("#imagen").val();
+   var descripcion=  $("#Descripcion").val();
+   var Fecha=  $("#Fecha").val();
+   var lugarCompra=  $("#lugarCompra").val();
+   var Factura=  $("#Factura").val();
    var marca=  $("#marca").val();
    var numSerie=  $("#numSerie").val();
    var modelo =$("#modelo").val();
     var otro =$("#otro").val();
 
 
-var validar=false;
    $.ajax({url:"../vista/insertar2.php",
-     success:function(validar){
+     success:function(result){
  
-alert(validar);
-       if (validar=="true") {
+//alert(result.trim());
+       if (result.trim() == "true") {
 
 //$("#resultado").html("se ha registrado el usuario correctamente");
 resultado.innerHTML="se ha guardado correctamente";
@@ -45,9 +42,9 @@ resultado.innerHTML="No se ha podido guardar";
      data:{
           nombreArticulo:nombreArticulo,
           descripcion:descripcion,
-          fecha:fecha,
-          direccion:direccion,
-          factura:factura,
+          Fecha:Fecha,
+          lugarCompra:lugarCompra,
+          Factura:Factura,
           marca:marca,
           numSerie:numSerie,
 		      modelo:modelo,

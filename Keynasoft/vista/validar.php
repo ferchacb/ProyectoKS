@@ -1,5 +1,7 @@
- <?php 
+<?php 
 
+
+//para validar el login
 include "../controlador/usuarioControlador.php";
 
 if ( isset($_POST["usuario"]) || isset($_POST["clave"])) {
@@ -30,7 +32,5 @@ if ( isset($_POST["usuario"]) || isset($_POST["clave"])) {
 	 	echo "false";
 	 #	return false;
 }	
-
-
 
  ?>
