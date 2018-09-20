@@ -70,9 +70,5 @@
         </div>
     </div>
     <div class="container" id="resultado"></div>
-    <?php 
-      sleep(2000);
-      header('./index.php');
-    ?>
 </body>
 </html>
