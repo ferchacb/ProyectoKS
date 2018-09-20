@@ -95,15 +95,7 @@ header {
     border-radius: 6px 0 6px 6px;
 }
 
-footer {
-    background: #a5d3ed;
-    width: 100%;
-    text-align: center;
-    padding-top: 2%;
-    /* Flexbox */
-    display: flex;
-    justify-content: center;
-}
+
 
 .navbar {
     margin-bottom: 0;
@@ -141,4 +133,15 @@ footer {
 .dropdown-menu {
     background-color: #215aa8;
     font-size: 18px !important;
+}
+
+
+footer {
+    background: #a5d3ed;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
 }
